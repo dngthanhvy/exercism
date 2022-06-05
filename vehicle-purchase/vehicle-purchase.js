@@ -11,10 +11,7 @@
  * @returns {boolean} whether a license is required
  */
 export function needsLicense(kind) {
-  if (["car", "truck"].includes(kind)) {
-    return true;
-  }
-  return false;
+  return ["car", "truck"].includes(kind);
 }
 
 /**
